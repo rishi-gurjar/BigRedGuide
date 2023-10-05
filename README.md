@@ -2,9 +2,9 @@
 With a student's academic and career interests, the Big Red Guide recommends relevant courses and clubs and creates multi-year academic plans.
 
 Features 
-- [] Frontend
-  - [] Search
-  - [] About us
+- [ ] Frontend
+  - [ ] Search
+  - [x] About us
   - [] Other pages
 - [] Backend
   - [] API requests with user input
