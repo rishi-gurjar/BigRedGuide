@@ -10,7 +10,6 @@ method = "search/classes"
 roster = "FA23"
 subject = "MATH"
 classLevels = [1000, 2000]
-#keyword = "Computer Science"
 
 # Construct the URL
 base_url = f"{host}/api/{api_version}/{method}.json"
@@ -18,7 +17,7 @@ params = {
     'roster': roster,
     'subject': subject,
     'classLevels[]': classLevels,
-  #  "q": "Machine Learning"
+  #  "q": "Machine Learning" #THIS PART IS WHERE THE KEYWORD IS DEFINED, BUT IT LEADS TO AN API ERROR WHEN UNCOMMENTED
 }
 
 # Make the API request
