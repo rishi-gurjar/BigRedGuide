@@ -9,20 +9,22 @@ method = "search/classes"
 # Parameters
 roster = "FA23"
 subject = "MATH"
-classLevels = 1000
+classLevels = [1000, 2000]
+#keyword = "Computer Science"
 
 # Construct the URL
 base_url = f"{host}/api/{api_version}/{method}.json"
 params = {
     'roster': roster,
     'subject': subject,
-    'classLevels[]': classLevels
+    'classLevels[]': classLevels,
+  #  "q": "Machine Learning"
 }
 
 # Make the API request
 response = requests.get(base_url, params=params)
 data = response.json()
-
+print(data)
 list = []
 def getcourse(data):
     classes = data.get('data', {}).get('classes', [])
@@ -55,4 +57,4 @@ def getcourse(data):
                         print("------------------------------")
 
 # Call the function to get the course details
-getcourse(data)
+#getcourse(data)
