@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 def course_request(subject, classLevels):
     # Base URL components
@@ -82,3 +83,25 @@ def getcourse_simple(data):
                     if course_name not in printed_courses:
                         printed_courses.add(course_name)
                         print(course_name)
+
+def get_all_courses(subjects):
+    #print('input    ', subjects)
+    #print('input type    ', type(subjects))
+    explain(subjects)
+    time.sleep(1)
+    for subject_code, subject_name in subjects.items():
+        print(" ")
+        print(f"################## Getting courses for {subject_name} in 1000, 2000, & 3000")
+        print("")
+        data = course_request(subject_code, [1000, 2000, 3000])
+        getcourse_simple(data)
+
+def explain(subjects):
+    print(" ")
+    print(" ")
+    for subject_code, subject_name in subjects.items():
+        print(f"#################### You selected {subject_code} - {subject_name} ####################")
+    print(" ")
+
+    
+#get_all_courses({'CS': 'Computer Science'})
