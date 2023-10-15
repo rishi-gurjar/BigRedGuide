@@ -13,7 +13,7 @@ Features
 - [ ] Web Deployment
 
 Major functionality
-- [ ] Relevant course recommendation
+- [X] Relevant course recommendation
 - [ ] 1-4 year plan creation
 - [ ] Relevant club recommendation
 - [ ] Excel file output
