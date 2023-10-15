@@ -7,9 +7,9 @@ Features
   - [ ] About us
   - [ ] Other pages
 - [ ] Backend
-  - [ ] API requests with user input
+  - [x] API requests with user input
   - [ ] Algorithm to calculate distribution, major requirements, and fulfilled requirements
-  - [ ] GPT-4 integration
+  - [x] GPT-4 integration
 - [ ] Web Deployment
 
 Major functionality
