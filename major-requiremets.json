@@ -1,0 +1,42 @@
+{
+    "university" : {
+        "college" : {
+            "name" : "Arts & Sciences",
+            "description": "100 credits in Arts & Sciences are required. Students can take more than 20 credits outside of the College as long as they take 100 credits within; they can also take all their credits in Arts & Sciences and accumulate more than 120. Note: AP, IB, and A-Level credits do not count toward this requirement.",
+            "major" : {
+                "name" : "Computer Science",
+                "description" : "https://www.cs.cornell.edu/undergrad/rulesandproceduresarts/artschecklist",
+                "requirements" : [
+                    {
+                        "fulfilledBy" : "courses",
+                        "minCourse" : [
+                            3,
+                            2,
+                            5,
+                            3,
+                            1,
+                            3,
+                            3,
+                            1,
+                            1
+                        ],
+                        "courseNames" : [
+                            "Mathematics",
+                            "Intro CS",
+                            "Core CS",
+                            "CS Electives",
+                            "CS Practicum or Project",
+                            "Technical Electives",
+                            "External Specialization",
+                            "Major-Approved",
+                            "CS Probability"
+                        ],
+                        "courses" : [
+                            
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
